@@ -5,11 +5,47 @@
 .header__icon{
     object-fit: contain;
     height:100px;
+    align-items: center;
 }
 
 .header__container{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    background-color: white;
+    z-index: 100;
+    
+}
+
+.header__center{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+    max-width: fit-content;
+    border: 1px solid lightgray;
+    border-radius: 999px;
+    height: 30px;
+    padding: 10px;
     margin: 0px 20px 10px 20px;
+}
+
+.header__center > input {
+    border: none;
+    padding: 10px;
+    outline-width: 0px;
+    /* width: 250px; */
+}
+
+.header__center > input:focus {
+    border : none;
+}
+
+.header__right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    widtH: 12vw;
+    margin-right: 80px;
 }
